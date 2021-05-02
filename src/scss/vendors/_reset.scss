@@ -40,32 +40,10 @@ body {
   scroll-behavior: smooth;
 }
 
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-}
-
 /* Make images easier to work with */
 img {
   display: block;
   max-width: 100%;
-}
-
-// https://www.zachleat.com/web/fluid-images/
-
-img[width] {
-  width: auto; /* Defer to max-width */
-}
-
-img[width][height] {
-  height: auto; /* Preserve aspect ratio */
-}
-
-/* Let SVG scale without boundaries */
-img[src$='.svg'] {
-  width: 100%;
-  height: auto;
-  max-width: none;
 }
 
 /* Inherit fonts for inputs and buttons */
