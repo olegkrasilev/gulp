@@ -24,10 +24,12 @@ html {
 
 .container {
   margin: 0 auto;
-  padding: 0 6rem;
+  padding: 0 30px;
   max-width: 130rem;
 }
 
-textarea {
-  resize: vertical;
+@media screen and (max-width: 900px) {
+  .container {
+    padding: 0 15px;
+  }
 }

@@ -2,12 +2,13 @@
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
 
-button {
-  border: none; 
+.btn-reset {
+  border: none;
   padding: 0;
   background-color: transparent;
   cursor: pointer;
- 
+  outline: none;
+  margin: 0;
 }
 
 .your-button {

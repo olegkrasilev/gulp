@@ -108,9 +108,11 @@ const images = () => {
     "./src/img/**.png",
     "./src/img/**.jpeg",
     "./src/img/*.svg",
+    "./src/img/*.avif",
     "./src/img/**/*.jpg",
     "./src/img/**/*.png",
     "./src/img/**/*.jpeg",
+    "./src/img/**/*.avif",
     // "./src/img/**/*.webp", if you need webP
   ])
     .pipe(gulpif(isProd, image()))

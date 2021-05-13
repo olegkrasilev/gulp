@@ -8,10 +8,10 @@
 
 /* Remove default padding */
 /* Remove list styles on ul, ol elements with a class attribute */
-ul[class],
-ol[class] {
+.list-rest {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 /* Remove default margin */
@@ -21,8 +21,6 @@ h2,
 h3,
 h4,
 p,
-ul[class],
-ol[class],
 li,
 figure,
 figcaption,
@@ -33,11 +31,15 @@ dd {
 }
 
 /* Set core body defaults */
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   min-height: 100vh;
   line-height: 1.5;
   text-rendering: optimizeSpeed;
-  scroll-behavior: smooth;
 }
 
 /* Make images easier to work with */
@@ -52,4 +54,16 @@ button,
 textarea,
 select {
   font: inherit;
+}
+
+label {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+textarea {
+  resize: vertical;
 }
