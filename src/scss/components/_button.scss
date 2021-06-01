@@ -3,12 +3,12 @@
 // -----------------------------------------------------------------------------
 
 .btn-reset {
+  margin: 0;
+  outline: none;
   border: none;
   padding: 0;
   background-color: transparent;
   cursor: pointer;
-  outline: none;
-  margin: 0;
 }
 
 .your-button {
@@ -17,6 +17,7 @@
     transition: all 0.2s;
   }
 
+  &:focus,
   &:hover {
     box-shadow: 0 1rem 2rem rgba(#fff, 0.15);
     transform: translateY(-2px);

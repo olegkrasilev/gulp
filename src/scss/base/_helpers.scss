@@ -1,3 +1,31 @@
 // -----------------------------------------------------------------------------
 // This file contains CSS helper classes.
 // -----------------------------------------------------------------------------
+
+/*
+
+.lazy-background {
+  background-image: url("hero-placeholder.jpg"); Placeholder image
+}
+
+.lazy-background.visible {
+  background-image: url("hero.jpg"); /* The final image
+}
+*/
+
+/* Lazy load pictures
+1. Add data-src(picture-placolder)
+2. Example
+<img class="image-class lazy-img" src="../img/Screenshot_5-dummy.jpg" alt="" data-src="../img/Screenshot_5.png">
+
+.image-class {
+  filter: blur(0);
+  transition: all 0.5s ease-in-out;
+}
+
+.image-class.lazy-img {
+  filter: blur(10px);
+  transition: all 0.5s ease-in-out;
+}
+
+*/

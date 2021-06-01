@@ -1,3 +1,21 @@
 // -----------------------------------------------------------------------------
 // This file contains all @font-face declarations, if any.
 // -----------------------------------------------------------------------------
+
+@font-face {
+  src: local('Type your font here'),
+    url('../fonts/awesome-l.woff2') format('woff2');
+  font-family: 'Type your font here';
+  font-weight: 400;
+  font-style: normal;
+  unicode-range: U+000-5FF; /* Latin glyphs */
+}
+
+@font-face {
+  src: local('Type your font here'),
+    url('../fonts/awesome-jp.woff2') format('woff2');
+  font-family: 'Type your font here';
+  font-weight: 400;
+  font-style: normal;
+  unicode-range: U+0400-04FF; /* Cyrillic glyphs */
+}

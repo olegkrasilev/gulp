@@ -4,11 +4,36 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta name="theme-color" content="#111111">
+	<link rel="canonical" href="https://www.mywebsite.com/page">
+	<!-- Use the canonical link element to prevent SEO issues caused by duplicate content by specifying the original source for pages that are available on multiple URLs. -->
+	<link rel="icon" href="./img/favicon.ico">
+	<!-- A 32×32px favicon for legacy browsers. It should live in the root of your website. -->
+	<link rel="icon" href="./img/favicon.svg" type="image/svg+xml">
+	<!-- Most modern browser support SVG favicons. The benefits of the favicon.svg are that it looks better when it’s scaled, because it’s a vector and not raster image, and we can add HTML and CSS to the SVG, which means that we can support dark mode. -->
+	<link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+	<!-- The 180×180px icon Apple devices will use if you add the page to your home screen. -->
+	<meta name="theme-color" content="#283747">
+	<!-- theme-color provides browsers with a CSS color to customize the display of the page or of the surrounding user interface -->
 	<meta name="description" content="My first WebSite">
+	<!-- The unique description of the page, for example, displayed on search result pages. It can be any length, but search engines truncate snippets to ~155–160 characters. -->
+	<meta property="og:title" content="Unique page title - My Site">
+	<!-- The unique title of the page. Used by URL scrapers on social media platforms like Twitter or Facebook. -->
 	<title>New site</title>
+	<!-- The unique title of the page. It’s displayed in many places, for example, on the browser tab, in search engine results, when you save a page as a bookmark, etc. -->
+	<meta property="og:image" content="./img/og-image.jpg">
+	<!-- The image displayed when you share the link to a page on social media, chat applications, or other sites that scrape URLs.
+Ideally, it should be a square image with the important content placed in the middle of the square in a rectangle with a 2:1 ratio. This will make sure that the image will look good in cards with rectangle and square shaped images. -->
+	<meta property="og:image:alt" content="Cat">
+	<!-- A description of the image. Don’t use this meta tag if the image is purely decorative and doesn’t provide any meaningful information. Screen readers ignore the image, if we don’t provide alt text. -->
+	<meta property="og:locale" content="en_GB">
+	<!-- An optional Open Graph property, but recommended. It defines the natural language of the page. -->
+	<meta property="og:type" content="website">
+	<!-- The type of content you’re sharing, e.g. website, article, or video.movie. A required property for valid Open Graph pages. -->
+	<!-- <link rel="preload" href="font.woff2" as="font" type="font/woff2"> Uncomment this if you need font. -->
+	<!-- Use preload if you want to ensure that specific resources are available earlier in the page lifecycle. -->
+	<meta name="format-detection" content="telephone=no">
+	<!-- Disable automatic detection and formatting of phone numbers -->
 	<link rel="stylesheet" href="./css/main.css">
 
 
