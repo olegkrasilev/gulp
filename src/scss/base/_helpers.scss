@@ -29,3 +29,10 @@
 }
 
 */
+
+/*
+  Responsive font-size or maybe margin
+  font-size: calc(24px + 42 * ((100vw - 320px) / (1600 - 320)));
+   font-size: calc(minFontSize + addSize * ((100vw - 320px) / (1920 - 320)));
+   minFontSize + addSize = should be Max FontSize
+*/
