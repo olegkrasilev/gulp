@@ -5,5 +5,15 @@
     "es6": true,
     "node": true
   },
-  "extends": ["airbnb/base"]
+  "extends": ["airbnb/base"],
+  "rules": {
+    "no-plusplus": "off",
+    "eol-last": "off",
+    "max-len": ["error", 150, { "ignoreUrls": true }],
+    "no-tabs": "off",
+    "indent": [2, "tab"],
+    "no-param-reassign": "off",
+    "no-alert": "off",
+    "no-console": "off"
+  }
 }
