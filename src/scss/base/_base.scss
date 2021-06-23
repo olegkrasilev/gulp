@@ -23,7 +23,7 @@ html {
 }
 
 .container {
+  max-width: calc(130rem + 5%);
   margin: 0 auto;
   padding: 0 5%;
-  max-width: calc(130rem + 5%);
 }
