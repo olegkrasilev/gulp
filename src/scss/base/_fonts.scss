@@ -1,21 +1,21 @@
 // -----------------------------------------------------------------------------
 // This file contains all @font-face declarations, if any.
 // -----------------------------------------------------------------------------
+// Example for fonts.html in partials folder.
+// @font-face {
+//   font-weight: 400;
+//   font-family: 'Type your font here';
+//   font-style: normal;
+//   src: local('Type your font here'),
+//     url('../fonts/awesome-l.woff2') format('woff2');
+//   unicode-range: U+000-5FF; /* Latin glyphs */
+// }
 
-@font-face {
-  font-weight: 400;
-  font-family: 'Type your font here';
-  font-style: normal;
-  src: local('Type your font here'),
-    url('../fonts/awesome-l.woff2') format('woff2');
-  unicode-range: U+000-5FF; /* Latin glyphs */
-}
-
-@font-face {
-  font-weight: 400;
-  font-family: 'Type your font here';
-  font-style: normal;
-  src: local('Type your font here'),
-    url('../fonts/awesome-jp.woff2') format('woff2');
-  unicode-range: U+0400-04FF; /* Cyrillic glyphs */
-}
+// @font-face {
+//   font-weight: 400;
+//   font-family: 'Type your font here';
+//   font-style: normal;
+//   src: local('Type your font here'),
+//     url('../fonts/awesome-jp.woff2') format('woff2');
+//   unicode-range: U+0400-04FF; /* Cyrillic glyphs */
+// }

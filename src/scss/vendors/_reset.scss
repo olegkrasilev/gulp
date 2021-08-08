@@ -7,10 +7,9 @@
   box-sizing: border-box;
 }
 
-/* Remove default padding */
-
 /* Remove list styles on ul, ol elements with a class attribute */
-.list-reset {
+
+.reset-list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -22,6 +21,8 @@ h1,
 h2,
 h3,
 h4,
+h5,
+h6,
 p,
 li,
 figure,
@@ -35,29 +36,48 @@ dd {
 /* Set core body defaults */
 
 html {
-  scroll-behavior: smooth;
+  height: 100%;
 }
 
 body {
-  min-height: 100vh;
+  height: 100%;
   line-height: 1.5;
   text-rendering: optimizeSpeed;
+  scroll-behavior: smooth;
+}
+
+// Include a default scroll-margin-top value for any element with an id attribute.
+[id] {
+  scroll-margin-top: 2ex;
 }
 
 /* Make images easier to work with */
+// https://css-tricks.com/barebones-css-for-fluid-images/ start
 img {
-  display: block;
-  width: auto;
   max-width: 100%;
-  height: auto;
-  object-fit: cover;
 }
+img[width] {
+  width: auto; /* Defer to max-width */
+}
+img[width][height] {
+  height: auto; /* Preserve aspect ratio */
+}
+
+/* Let SVG scale without boundaries */
+img[src$='.svg'] {
+  width: 100%;
+  max-width: none;
+  height: auto;
+}
+
+// https://css-tricks.com/barebones-css-for-fluid-images/ end
 
 /* Inherit fonts for inputs and buttons */
 input,
 button,
 textarea,
-select {
+select,
+address {
   font: inherit;
 }
 
@@ -71,4 +91,26 @@ a {
 
 textarea {
   resize: vertical;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+// https://www.youtube.com/watch?v=kNGYuTelE3E reset styles
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
 }

@@ -1,0 +1,24 @@
+{
+  "name": "Your name",
+  "short_name": "Your short name",
+  "description": "Your description",
+  "icons": [
+    {
+      "src": "./favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./favicon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "theme_color": "#000",
+  "background_color": "#111",
+  "display": "standalone",
+  "orientation": "natural",
+  "start_url": "."
+}
