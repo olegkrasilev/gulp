@@ -37,13 +37,13 @@ dd {
 
 html {
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
   height: 100%;
   line-height: 1.5;
   text-rendering: optimizeSpeed;
-  scroll-behavior: smooth;
 }
 
 // Include a default scroll-margin-top value for any element with an id attribute.
@@ -52,25 +52,9 @@ body {
 }
 
 /* Make images easier to work with */
-// https://css-tricks.com/barebones-css-for-fluid-images/ start
 img {
   max-width: 100%;
 }
-img[width] {
-  width: auto; /* Defer to max-width */
-}
-img[width][height] {
-  height: auto; /* Preserve aspect ratio */
-}
-
-/* Let SVG scale without boundaries */
-img[src$='.svg'] {
-  width: 100%;
-  max-width: none;
-  height: auto;
-}
-
-// https://css-tricks.com/barebones-css-for-fluid-images/ end
 
 /* Inherit fonts for inputs and buttons */
 input,
