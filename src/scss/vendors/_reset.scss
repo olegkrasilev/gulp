@@ -98,3 +98,25 @@ h6 {
   font-weight: inherit;
   font-size: inherit;
 }
+
+// reset iOS styling your input fields
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+textarea {
+-webkit-appearance: none;
+border-radius: 0;
+}
+
+// reset button styles
+.reset-btn {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
