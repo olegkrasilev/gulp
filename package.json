@@ -1,6 +1,6 @@
 {
   "name": "gulp-builder",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "gulp-builder for weblayout",
   "main": "gulpfile.js",
   "scripts": {
@@ -57,6 +57,7 @@
   "dependencies": {
     "@popperjs/core": "^2.11.2",
     "aos": "^2.3.4",
+    "critical": "^4.0.1",
     "express": "^4.18.2",
     "graph-modal": "^1.0.4",
     "graph-tabs": "^1.0.0",
