@@ -84,3 +84,10 @@ console.log(mobileCheck())
 // };
 
 // validateForms('.form-1', rules1, afterForm);
+
+
+// Асинхронная загрузка CSS
+import { loadCSS } from './vendor/loadCss'
+
+loadCSS('css/main.css');
+loadCSS('css/vendor.css');
